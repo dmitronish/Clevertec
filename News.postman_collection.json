@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "11285130-db90-4d25-8851-261f911b7f94",
+		"name": "News",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26687647"
+	},
+	"item": [
+		{
+			"name": "Add news",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"title\": \"31.12.2024. Какой сегодня день: 31 декабря\",\r\n        \"text\": \"Этот день является 365-м в григорианском календаре — последним в этом году. 31 декабря — канун Нового года. А знаете ли вы, что до XV века на Руси новый год начинался с 1 марта?\",\r\n        \"userName\": \"Семенякин Дмитрий\"\r\n  }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://93.84.86.69:9099/news_applications/v1/news",
+					"protocol": "http",
+					"host": [
+						"93",
+						"84",
+						"86",
+						"69"
+					],
+					"port": "9099",
+					"path": [
+						"news_applications",
+						"v1",
+						"news"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "id157",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://93.84.86.69:9099/news_applications/v1/news/157",
+					"protocol": "http",
+					"host": [
+						"93",
+						"84",
+						"86",
+						"69"
+					],
+					"port": "9099",
+					"path": [
+						"news_applications",
+						"v1",
+						"news",
+						"157"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 157,\r\n    \"title\": \"31.12.2024. Какой сегодня день: 31 декабря\",\r\n    \"text\": \"Этот день является 365-м в григорианском календаре — последним в этом году. 31 декабря — канун Нового года. А знаете ли вы, что до XV века на Руси новый год начинался с 1 марта?\",\r\n    \"userName\": \"Семенякин Дмитрий Леонидович\",\r\n    \"time\": \"2023-12-30T21:59:58.940962958\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://93.84.86.69:9099/news_applications/v1/news/157",
+					"protocol": "http",
+					"host": [
+						"93",
+						"84",
+						"86",
+						"69"
+					],
+					"port": "9099",
+					"path": [
+						"news_applications",
+						"v1",
+						"news",
+						"157"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "id157 update",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://93.84.86.69:9099/news_applications/v1/news/157",
+					"protocol": "http",
+					"host": [
+						"93",
+						"84",
+						"86",
+						"69"
+					],
+					"port": "9099",
+					"path": [
+						"news_applications",
+						"v1",
+						"news",
+						"157"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sort",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://93.84.86.69:9099/news_applications/v1/news?keyword=%25%25&pageNo=0&pageSize=5&sortBy=id",
+					"protocol": "http",
+					"host": [
+						"93",
+						"84",
+						"86",
+						"69"
+					],
+					"port": "9099",
+					"path": [
+						"news_applications",
+						"v1",
+						"news"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "%25%25"
+						},
+						{
+							"key": "pageNo",
+							"value": "0"
+						},
+						{
+							"key": "pageSize",
+							"value": "5"
+						},
+						{
+							"key": "sortBy",
+							"value": "id"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
